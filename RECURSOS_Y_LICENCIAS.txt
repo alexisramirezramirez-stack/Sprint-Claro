@@ -1,0 +1,31 @@
+SPRINT CLARO · RECURSOS Y FUENTES
+Consulta: 25 de noviembre de 2026.
+
+CONTENIDO DEL ALUMNO
+Nombre, país, nivel, correo y objetivos: respuesta proporcionada por Joel Alexis Ramírez Ramírez. No se inventaron clientes, proyectos, credenciales, reseñas ni datos operativos.
+
+REFERENCIAS PRIMARIAS
+Scrum Guide, Ken Schwaber y Jeff Sutherland (edición noviembre de 2020):
+https://scrumguides.org/scrum-guide.html
+Edición oficial y traducciones:
+https://scrumguides.org/download.html
+Se enlaza la fuente y se ofrecen explicaciones originales breves. No se redistribuye una copia de la guía ni se afirma aval de sus autores.
+
+Documentación técnica consultada:
+https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+https://docs.netlify.com/deploy/create-deploys/#deploy-with-drag-and-drop
+Se usan como referencia para explicar persistencia local y publicación manual; la entrega no se ha publicado.
+
+DISEÑO Y CÓDIGO
+HTML, CSS, JavaScript, favicon y visual conceptual del lienzo: creación original para esta entrega. Sin fotografías, ilustraciones de terceros ni pantallas que aparenten datos reales. El visual del inicio es una composición CSS del método, identificada como esquema.
+
+FUENTES LOCALES
+Noto Sans, Noto Sans Display y fuente monoespaciada provistas para la entrega bajo los alias Site Text, Site Display y Site Mono (DejaVu Sans Mono). Archivos WOFF locales en assets/fonts/. Conservar assets/fonts/LICENSES.txt con sus atribuciones y licencia. No se descargan fuentes desde CDN.
+
+PRUEBAS
+El DOM instrumentado sigue el patrón de pruebas interno reutilizado de una entrega IBERO anterior y se adaptó a este sitio. No incluye software de terceros ni datos personales de aquella promoción.
+
+REDISEÑO · 26 NOVIEMBRE 2026
+Portada, componentes visuales y navegación propios de este producto. Iconos SVG nativos y composiciones de interfaz originales. assets/premium.css y assets/experience.js amplían la presentación sin añadir bibliotecas externas. No se usan marcas, testimonios, datos o clientes ficticios.
+
+assets/sesion-de-equipo.jpg: fotografía ilustrativa de planificación generada para Sprint Claro con OpenAI ImageGen; no representa a Joel ni a su equipo.

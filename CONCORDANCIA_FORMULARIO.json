@@ -1,0 +1,167 @@
+{
+  "date": "2026-11-26",
+  "original_answer": {
+    "fecha": "25/11/2026, 11:08:45 a.m.",
+    "entrega": "Revisar envío de correo · respuesta guardadaActualizar estado",
+    "nombre": "Joel Alexis Ramírez Ramírez",
+    "email": "alexis.ramirez.ramirez@gmail.com",
+    "pais": "México",
+    "proyectos": "En implementaciones de Scrum",
+    "objetivos": "Lograr una Sprint Planning con Asistentes , sin reemplazar al equipo",
+    "estado_web": "no_tengo",
+    "web_deseos": "—",
+    "automatizacion": "Análisis de HU, Estimaciones, recomendaciones de asignaciones, revisión de riesgos, dependencias, claridad de Sprint Goal VS HU comprometidas, Ayudas que se requerirán en el Sprint, etc.",
+    "experiencia_ia": "principiante",
+    "crm": "Enviar al CRM"
+  },
+  "audit": {
+    "folder": "01_joel_ramirez_sprint_claro",
+    "name": "Joel Alexis Ramírez Ramírez",
+    "verdict": "Concordante en enfoque y preparación de la Sprint Planning; cobertura parcial de la asistencia automatizada. No hay recomendaciones de IA ejecutadas dentro del lienzo.",
+    "requirements": [
+      {
+        "source_field": "objetivos",
+        "quote": "Lograr una Sprint Planning con Asistentes , sin reemplazar al equipo",
+        "need": "Preparar una Sprint Planning con asistencia conservando las decisiones del equipo.",
+        "status": "parcial",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/herramientas.html: formularios de Sprint, equipo, HU y conversación",
+          "01_joel_ramirez_sprint_claro/assets/core.js: analyze(), plan(), prompt()"
+        ],
+        "pending": "La preparación y las comprobaciones locales funcionan. El análisis de un asistente requiere usar el prompt fuera de la web o conectar un modelo; no se ejecuta al descargarlo.",
+        "coverage": "Permite preparar la meta, el equipo, las historias y los acuerdos del Sprint. Reúne el contexto en un plan y un prompt para continuar la conversación con un asistente externo."
+      },
+      {
+        "source_field": "automatizacion",
+        "quote": "Análisis de HU",
+        "need": "Revisar claridad, criterios y contexto de historias de usuario.",
+        "status": "parcial",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/assets/core.js: analyze() detecta ausencias de rol/necesidad/beneficio/criterios",
+          "01_joel_ramirez_sprint_claro/assets/core.js: prompt(), apartado 1"
+        ],
+        "pending": "El código no interpreta el significado ni determina la calidad de una historia. El análisis semántico y las propuestas de redacción se solicitan a un asistente externo y luego se revisan.",
+        "coverage": "Revisa si las historias seleccionadas tienen rol, necesidad, beneficio y criterios, y señala información ausente. El prompt prepara preguntas y posibles mejoras de redacción para revisión externa."
+      },
+      {
+        "source_field": "automatizacion",
+        "quote": "Estimaciones",
+        "need": "Asistir al equipo para discutir estimaciones.",
+        "status": "parcial",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/herramientas.html: story-estimate, sprint-unit y sprint-capacity",
+          "01_joel_ramirez_sprint_claro/assets/core.js: estimationTotals(), analyze(), prompt() apartado 2"
+        ],
+        "pending": "Se registran cifras humanas y se comparan con capacidad. Para un rango orientativo asistido hacen falta unidad, referencias históricas comparables y contexto suficiente; la aplicación no produce una estimación de IA.",
+        "coverage": "Guarda las estimaciones que aporta el equipo, suma las de las historias seleccionadas y las compara con una capacidad de referencia. El prompt pide discutir rangos orientativos solo cuando existen referencias y contexto suficientes."
+      },
+      {
+        "source_field": "automatizacion",
+        "quote": "recomendaciones de asignaciones",
+        "need": "Proponer opciones de participación sin decidir por el equipo.",
+        "status": "parcial",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/herramientas.html: habilidades/disponibilidad del integrante, story-owner y story-ownerReason",
+          "01_joel_ramirez_sprint_claro/assets/core.js: prompt() apartado 3"
+        ],
+        "pending": "La aplicación conserva la propuesta humana. El prompt solicita alternativas justificadas según los datos del equipo; esas recomendaciones aún deben producirse en un asistente externo y acordarse con las personas.",
+        "coverage": "Guarda habilidades, disponibilidad, la persona propuesta y el motivo indicado por el equipo. El prompt pide alternativas justificadas para que después se conversen y acuerden."
+      },
+      {
+        "source_field": "automatizacion",
+        "quote": "revisión de riesgos",
+        "need": "Revisar riesgos conocidos y posibles incertidumbres.",
+        "status": "parcial",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/herramientas.html: story-risk y notas de capacidad",
+          "01_joel_ramirez_sprint_claro/assets/core.js: analyze() muestra riesgos registrados; prompt() apartado 4"
+        ],
+        "pending": "Las reglas muestran riesgos escritos; no descubren riesgos semánticos. El prompt separa hechos de hipótesis que requieren validación.",
+        "coverage": "Muestra los riesgos e incertidumbres escritos en cada historia y los incluye en el plan. El prompt pide separar esos hechos de otros riesgos propuestos como hipótesis."
+      },
+      {
+        "source_field": "automatizacion",
+        "quote": "dependencias",
+        "need": "Relacionar HU y hacer visibles dependencias fuera de la selección o circulares.",
+        "status": "local",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/herramientas.html: dependency-options",
+          "01_joel_ramirez_sprint_claro/assets/core.js: validate(), cycles(), analyze()"
+        ],
+        "pending": "Las relaciones se introducen manualmente. La detección de referencias inválidas, ciclos y dependencias no seleccionadas funciona localmente; inferir nuevas relaciones desde el texto requiere revisión asistida externa.",
+        "coverage": "Permite relacionar historias entre sí y detecta referencias inválidas, dependencias fuera de la selección y ciclos. Estas comprobaciones funcionan dentro de la herramienta."
+      },
+      {
+        "source_field": "automatizacion",
+        "quote": "claridad de Sprint Goal VS HU comprometidas",
+        "need": "Revisar cómo contribuye la selección de HU a la meta.",
+        "status": "parcial",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/herramientas.html: sprint-goal, story-alignment, selección del Sprint",
+          "01_joel_ramirez_sprint_claro/assets/core.js: analyze() detecta explicación ausente; prompt() apartado 5"
+        ],
+        "pending": "Existe trazabilidad escrita y verificación de ausencia. La coherencia semántica de meta e historias debe evaluarla el equipo o un asistente externo; el campo lleno no la acredita.",
+        "coverage": "Guarda el Sprint Goal y la explicación de cómo contribuye cada historia seleccionada. Señala las explicaciones ausentes y prepara una revisión de esa relación con el equipo o un asistente externo."
+      },
+      {
+        "source_field": "automatizacion",
+        "quote": "Ayudas que se requerirán en el Sprint",
+        "need": "Organizar apoyos necesarios y preguntas para resolverlos.",
+        "status": "parcial",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/herramientas.html: story-help, habilidades y disponibilidad",
+          "01_joel_ramirez_sprint_claro/assets/core.js: analyze(), plan(), prompt() apartado 6"
+        ],
+        "pending": "Se reúnen ayudas registradas. Las ayudas adicionales propuestas por un asistente son hipótesis y requieren contexto, responsable y acuerdo humano.",
+        "coverage": "Reúne las ayudas solicitadas y el contexto de habilidades y disponibilidad. El plan y el prompt permiten revisar los apoyos y las decisiones que falta acordar."
+      },
+      {
+        "source_field": "estado_web",
+        "quote": "no_tengo",
+        "need": "Disponer de una web y herramienta inicial utilizable por un principiante.",
+        "status": "local",
+        "evidence": [
+          "01_joel_ramirez_sprint_claro/index.html",
+          "01_joel_ramirez_sprint_claro/enfoque.html: primer ejercicio",
+          "01_joel_ramirez_sprint_claro/herramientas.html",
+          "01_joel_ramirez_sprint_claro/contacto.html",
+          "01_joel_ramirez_sprint_claro/404.html",
+          "01_joel_ramirez_sprint_claro/LEEME.txt"
+        ],
+        "pending": "La carpeta estática está creada y documentada. Su publicación requiere elegir destino; no se publicó en esta revisión.",
+        "coverage": "Incluye una web propia con presentación, explicación del método, lienzo, contacto e instrucciones. El primer ejercicio guía al alumno para crear y respaldar un Sprint pequeño."
+      }
+    ],
+    "changes": [
+      {
+        "path": "01_joel_ramirez_sprint_claro/PRUEBAS.md",
+        "summary": "Prompt con seis apartados alineados a las necesidades; alcance de asistencia externa explícito; citas y resultado vigente de verificación corregidos."
+      },
+      {
+        "path": "01_joel_ramirez_sprint_claro/NECESIDADES_Y_ALCANCE.md",
+        "summary": "Prompt con seis apartados alineados a las necesidades; alcance de asistencia externa explícito; citas y resultado vigente de verificación corregidos."
+      },
+      {
+        "path": "01_joel_ramirez_sprint_claro/LEEME.txt",
+        "summary": "Prompt con seis apartados alineados a las necesidades; alcance de asistencia externa explícito; citas y resultado vigente de verificación corregidos."
+      },
+      {
+        "path": "01_joel_ramirez_sprint_claro/assets/core.js",
+        "summary": "Prompt con seis apartados alineados a las necesidades; alcance de asistencia externa explícito; citas y resultado vigente de verificación corregidos."
+      }
+    ],
+    "tests": [
+      {
+        "executed": true,
+        "command": "node 01_joel_ramirez_sprint_claro/pruebas/ejecutar.cjs",
+        "result": "16/16 grupos aprobados tras modificar prompt()",
+        "type": "Reejecución de la batería existente; no aumenta el total de grupos de la entrega."
+      },
+      {
+        "executed": true,
+        "command": "node --check 01_joel_ramirez_sprint_claro/assets/core.js",
+        "result": "PASS"
+      }
+    ]
+  }
+}

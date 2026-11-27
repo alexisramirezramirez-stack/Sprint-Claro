@@ -1,0 +1,64 @@
+SPRINT CLARO
+Proyecto individual de Joel Alexis Ramírez Ramírez · México
+Entrega: 25 de noviembre de 2026
+
+EMPEZAR
+1. Descomprime el ZIP individual completo. Conserva index.html y assets/ juntos.
+2. Abre index.html. Entra en «Lienzo de equipo».
+3. Define el Sprint Goal, fechas, unidad y referencia de capacidad si el equipo la usa.
+4. Agrega integrantes y sus habilidades/disponibilidad. Registra una primera HU.
+5. Selecciona trabajo para el Sprint y conversa sobre los avisos. Guarda los acuerdos.
+6. Descarga el plan TXT, el prompt para tu asistente y un respaldo JSON.
+
+Las páginas necesitan un navegador moderno; el lienzo necesita JavaScript. No hay npm, compilación, CDN ni servicios externos necesarios. Al abrir archivos directamente, el almacenamiento local depende del navegador; la herramienta avisa si trabaja solamente en memoria. Descarga un respaldo antes de cerrar.
+
+QUÉ HACE CADA PÁGINA
+index.html: presenta la propuesta y el punto de partida.
+enfoque.html: explica meta, HU, plan, reglas y primer ejercicio.
+herramientas.html: contexto, equipo, backlog, selección, comprobaciones y exportaciones.
+contacto.html: prepara un correo para Joel que tú revisas y envías.
+404.html: recuperación de navegación para una dirección inexistente.
+
+USO DEL LIENZO
+- Los formularios se guardan al pulsar su botón. Un campo sin guardar no se incluye en exportaciones.
+- La capacidad y las estimaciones son aportadas por el equipo. Cambiar la unidad no convierte cifras: revisa cada HU.
+- La estimación puede quedar vacía. Cero es una estimación numérica; vacío significa sin estimar.
+- Un campo completo no garantiza que su contenido sea claro o correcto. La alineación con la meta se revisa conversando.
+- «Hecha según el equipo» es un estado declarado. La herramienta no verifica la Definition of Done.
+- El participante de una HU es una propuesta humana. Sus habilidades y disponibilidad sirven como contexto.
+- No se elimina una HU que otras referencien como dependencia, ni un integrante propuesto en una HU. Modifica esas referencias primero.
+- El plan es un texto legible; el prompt incluye todos los datos del equipo y backlog, también las HU no seleccionadas. Sus seis apartados cubren HU, opciones de estimación, colaboración, riesgos/dependencias, relación con la meta y ayudas. Las cifras orientativas requieren referencias suficientes y todas las propuestas se deciden en equipo. Aquí no hay un modelo conectado: descargar el prompt no ejecuta ese análisis.
+
+DATOS Y RESPALDOS
+Los datos se guardan en este navegador con la clave ibero_joel_sprint_claro_v1. No hay nube, cuenta de usuario ni sincronización. Usa una sola pestaña de trabajo: ediciones simultáneas no se fusionan.
+El JSON es la copia completa (app sprint-claro, schema 1). Restaurar muestra primero una vista previa y exige «Confirmar reemplazo». Un archivo inválido conserva el estado actual. Límite de importación: 3 MB; hasta 100 integrantes y 500 historias.
+El CSV contiene el backlog completo, usa UTF-8 y protege valores que una hoja de cálculo podría tratar como fórmulas. Los TXT contienen plan o prompt. No se añaden archivos automáticamente a ningún correo.
+Si el almacenamiento falla o se detecta un respaldo local inválido, el trabajo se mantiene en memoria y se avisa. No se sobrescribe el contenido local inválido. Conserva tu JSON antes de cerrar. Una ruta local distinta o un dominio diferente pueden tener otro almacenamiento.
+
+PUBLICAR CUANDO LO DECIDAS
+Entrega local: no se ha publicado ningún sitio.
+Para una publicación manual en Netlify, utiliza la carpeta que contiene index.html, assets/, _headers y netlify.toml. El sitio es estático y no requiere comando de compilación; publish = ".". No cambies nombres o rutas de assets.
+No incluyas tus respaldos de trabajo en la carpeta pública. La herramienta empieza vacía para cada navegador; las copias JSON son archivos de datos aparte.
+Guía oficial: https://docs.netlify.com/deploy/create-deploys/#deploy-with-drag-and-drop
+
+VERIFICACIÓN
+Se ejecutaron 16 grupos de pruebas sobre el código real: reglas y validaciones, exportación, CRUD y selección, protección de dependencias, restauración, respaldo, almacenamiento no disponible, texto seguro, menú y contacto.
+Para repetir: node pruebas/ejecutar.cjs
+Si cambias HTML: python pruebas/generar_dom.py, luego node pruebas/ejecutar.cjs.
+Las pruebas usan Node y un DOM instrumentado generado del HTML; no abren un navegador. No se realizó una inspección visual en navegador.
+
+DOCUMENTACIÓN
+NECESIDADES_Y_ALCANCE.md: análisis individual, límites y siguiente fase.
+PRUEBAS.md: pruebas y criterios de aceptación.
+RECURSOS_Y_LICENCIAS.txt: fuentes y recursos.
+
+REVISIÓN DEL 26 DE NOVIEMBRE DE 2026
+La suma de estimaciones y su comparación con capacidad usan los decimales de los valores guardados, evitando avisos falsos por redondeo binario. El esquema del respaldo sigue siendo versión 1. Los formularios con cambios pendientes deben guardarse o descartarse antes de generar/exportar/restaurar. Las selecciones del tablero se mantienen coherentes con una HU en edición. Si cambias un borrador de contacto, debes prepararlo otra vez.
+Se ajustaron tamaños de controles y metadatos y se reforzó el ajuste por CSS en anchos estrechos. 16 grupos de pruebas aprobados. No se realizó una inspección visual en navegador.
+
+LÍMITE DEL RESPALDO
+Cada cambio debe conservar un respaldo JSON de hasta 3 MB. Si se supera, no se guarda el cambio y se conserva el estado anterior. Descarga tu respaldo antes de dividir un trabajo extenso.
+
+INTERFAZ ACTUALIZADA · 26 NOVIEMBRE 2026
+El lienzo ahora muestra una vista de trabajo a la vez: Meta y equipo, Historias, Conversación y Respaldos. Cambiar de vista conserva los valores que todavía escribes; debes guardarlos antes de exportar. Los enlaces a una sección abren esa vista directamente. Si JavaScript no se ejecuta, las secciones conservan su estructura completa en el HTML; el motor de trabajo sí requiere JavaScript.
+La portada presenta un esquema conceptual del método, no registros de un equipo. Los avisos de guardado y validación se muestran cerca de tu trabajo y pueden cerrarse. Las transiciones respetan la preferencia de movimiento reducido del dispositivo.
