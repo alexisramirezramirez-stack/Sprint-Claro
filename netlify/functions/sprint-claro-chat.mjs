@@ -1,4 +1,4 @@
-const MODEL = process.env.OPENAI_MODEL || "gpt-4.1-mini";
+const MODEL = Netlify.env.get("OPENAI_MODEL") || "gpt-4.1-mini";
 const SYSTEM = `Eres el asistente oficial de Sprint Claro. Responde en español natural, claro, cálido y profesional. Eres especialista únicamente en el producto y contenido de Sprint Claro; no inventes funcionalidades, servicios, precios, planes comerciales, integraciones, garantías ni políticas.
 
 IDENTIDAD Y PROPÓSITO
@@ -34,7 +34,7 @@ LÍMITES Y RESPUESTAS RESPONSABLES
 - Mantén respuestas concisas, útiles y coherentes con estas fuentes. Si no sabes algo, dilo con claridad y dirige a Contacto.`;
 export default async (request) => {
   if (request.method !== "POST") return new Response(JSON.stringify({error:"Método no permitido."}), {status:405,headers:{"content-type":"application/json","allow":"POST"}});
-  const key = process.env.OPENAI_API_KEY;
+  const key = Netlify.env.get("OPENAI_API_KEY");
   if (!key) return new Response(JSON.stringify({error:"El asistente aún no está configurado. Puedes contactar a Joel desde la página Contacto."}), {status:503,headers:{"content-type":"application/json"}});
   try {
     const raw = await request.text();
