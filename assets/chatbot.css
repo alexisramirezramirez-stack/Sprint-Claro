@@ -25,3 +25,7 @@
 .sc-chat-typing{font-size:12px;color:#68617c;padding:0 16px 9px;background:#faf8f3}
 @media(max-width:520px){.sc-chat{right:10px;bottom:78px;width:calc(100vw - 20px);height:min(620px,calc(100dvh - 96px))}.sc-chat-launcher{right:14px;bottom:14px}.sc-chat-message{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.sc-chat-launcher{transition:none}}
+
+.sc-chat-sources{border-top:1px solid #e7e1f0;margin-top:12px;padding-top:9px;display:flex;flex-direction:column;gap:6px;font-size:12px}
+.sc-chat-sources strong{font-size:11px;color:#625b75}
+.sc-chat-sources a{color:#2a22b6;text-decoration:underline;font-weight:600}
