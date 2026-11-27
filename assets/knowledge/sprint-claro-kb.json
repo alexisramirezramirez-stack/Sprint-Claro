@@ -1,0 +1,605 @@
+{
+  "version": "1.0.0",
+  "title": "Biblioteca de conocimiento Sprint Claro",
+  "language": "es-MX",
+  "scope": "Sprint Planning y uso del Lienzo Sprint Claro",
+  "method": "Contenido original de síntesis; distingue marco oficial, prácticas de autor y reglas propias del producto.",
+  "sources": [
+    {
+      "id": "scrum-guide-2020",
+      "name": "Scrum Guide 2020",
+      "authors": "Ken Schwaber y Jeff Sutherland",
+      "kind": "Marco oficial Scrum",
+      "url": "https://scrumguides.org/scrum-guide.html"
+    },
+    {
+      "id": "cohn-usa",
+      "name": "User Stories Applied",
+      "authors": "Mike Cohn",
+      "kind": "Libro / prácticas de historias de usuario",
+      "url": "https://www.mountaingoatsoftware.com/books/user-stories-applied"
+    },
+    {
+      "id": "cohn-aep",
+      "name": "Agile Estimating and Planning",
+      "authors": "Mike Cohn",
+      "kind": "Libro / estimación y planificación ágil",
+      "url": "https://www.mountaingoatsoftware.com/books/agile-estimating-and-planning"
+    },
+    {
+      "id": "cohn-story-points",
+      "name": "What Are Agile Story Points?",
+      "authors": "Mike Cohn / Mountain Goat Software",
+      "kind": "Artículo técnico",
+      "url": "https://www.mountaingoatsoftware.com/agile/what-are-story-points"
+    },
+    {
+      "id": "cohn-planning-poker",
+      "name": "Agile Estimation: Estimating with Story Points",
+      "authors": "Mike Cohn / Mountain Goat Software",
+      "kind": "Artículo técnico",
+      "url": "https://learn.mountaingoatsoftware.com/agile/agile-estimation-estimating-with-story-points"
+    },
+    {
+      "id": "cohn-just-enough",
+      "name": "Writing the Product Backlog Just in Time and Just Enough",
+      "authors": "Mike Cohn",
+      "kind": "Artículo técnico",
+      "url": "https://learn.mountaingoatsoftware.com/articles/writing-the-product-backlog-just-in-time-and-just-enough"
+    },
+    {
+      "id": "pmi-agile-2026",
+      "name": "Agile Practice Guide, Second Edition",
+      "authors": "Project Management Institute y Agile Alliance",
+      "kind": "Guía de prácticas ágil; marco neutral",
+      "url": "https://www.pmi.org/es-es/standards/agile"
+    }
+  ],
+  "entries": [
+    {
+      "id": "sp-purpose",
+      "title": "Propósito y resultados de Sprint Planning",
+      "category": "sprint-planning",
+      "tags": [
+        "sprint planning",
+        "planificación",
+        "reunión",
+        "propósito",
+        "objetivo",
+        "qué",
+        "por qué",
+        "cómo"
+      ],
+      "summary": "Sprint Planning inicia el Sprint al establecer el trabajo que se realizará y el plan para realizarlo. El Scrum Team crea el plan colaborativamente.",
+      "detail": "La Scrum Guide estructura la conversación en tres temas: por qué este Sprint es valioso; qué se puede hacer en este Sprint; y cómo se realizará el trabajo elegido. No es una sesión para que una persona asigne tareas unilateralmente. El resultado central es el Sprint Backlog: el Sprint Goal, los Product Backlog items seleccionados y un plan accionable para entregar el Incremento.",
+      "steps": [
+        "Llegar con el Product Backlog suficientemente preparado para conversar sobre los elementos importantes.",
+        "Acordar por qué el Sprint aporta valor y formular el Sprint Goal.",
+        "Conversar qué elementos pueden seleccionarse considerando el objetivo y la capacidad real.",
+        "Planear cómo se realizará el trabajo; descomponer en trabajo más pequeño cuando ayude.",
+        "Verificar entendimiento compartido y adaptar el plan durante el Sprint."
+      ],
+      "example": "En lugar de empezar con «¿cuántos puntos metemos?», comenzar con «¿qué cambio útil queremos conseguir para las personas usuarias al terminar este Sprint?». Después revisar qué elementos contribuyen a ese resultado.",
+      "pitfalls": [
+        "Confundir Sprint Planning con asignación de tareas por un jefe.",
+        "Seleccionar elementos solo para llenar una cifra de puntos.",
+        "Salir con una lista sin un objetivo compartido ni plan entendible."
+      ],
+      "lens": "En Sprint Claro: completar Sprint Goal y contexto; revisar historias y contribución a la meta; seleccionar con el equipo; registrar el plan y los acuerdos. El lienzo facilita la conversación, no reemplaza el evento.",
+      "sources": [
+        "scrum-guide-2020"
+      ]
+    },
+    {
+      "id": "sp-goal",
+      "title": "Construir un Sprint Goal útil",
+      "category": "sprint-goal",
+      "tags": [
+        "sprint goal",
+        "objetivo del sprint",
+        "meta",
+        "valor",
+        "propósito",
+        "por qué",
+        "resultado"
+      ],
+      "summary": "El Sprint Goal es el objetivo único del Sprint. Da coherencia al trabajo y ofrece flexibilidad sobre la forma concreta de alcanzarlo.",
+      "detail": "El Product Owner propone cómo el producto podría incrementar valor y utilidad; todo el Scrum Team colabora para definir el Sprint Goal. Debe quedar definido durante Sprint Planning. El objetivo no debe ser una lista de historias ni una lista de actividades: expresa el resultado o propósito que hace valioso el Sprint. El plan puede adaptarse conforme el equipo aprende, sin poner en peligro el objetivo.",
+      "steps": [
+        "Identificar una necesidad, oportunidad o resultado relevante.",
+        "Expresar el cambio esperado desde la perspectiva del producto o de sus usuarios.",
+        "Comprobar que los elementos candidatos contribuyen a ese resultado.",
+        "Redactar una frase comprensible y comprobar que el equipo la interpreta igual.",
+        "Usar el objetivo como referencia para decisiones y adaptación durante el Sprint."
+      ],
+      "example": "Débil: «Completar HU-12, HU-14 y HU-18». Mejor: «Permitir que los clientes consulten el estado de su pedido sin contactar a soporte». La segunda formulación explica el valor; las historias son posibles medios.",
+      "pitfalls": [
+        "Convertir el objetivo en una lista de entregables.",
+        "Redactar una meta tan amplia que no ayude a tomar decisiones.",
+        "Aceptar historias que no contribuyen y no explicar por qué son necesarias."
+      ],
+      "lens": "Campo Sprint Goal en Meta y contexto. En cada HU, usar «¿Cómo contribuye al Sprint Goal?» para hacer visible la relación; la respuesta requiere criterio humano.",
+      "sources": [
+        "scrum-guide-2020",
+        "cohn-usa"
+      ]
+    },
+    {
+      "id": "sp-three-topics",
+      "title": "Los tres temas de Sprint Planning: por qué, qué y cómo",
+      "category": "sprint-planning",
+      "tags": [
+        "por qué",
+        "qué",
+        "cómo",
+        "temas",
+        "agenda",
+        "valor",
+        "selección",
+        "plan"
+      ],
+      "summary": "Los tres temas organizan la conversación sin convertirla en una receta rígida: valor, selección de trabajo y plan.",
+      "detail": "Por qué: el Product Owner propone cómo incrementar valor y el Scrum Team colabora en el Sprint Goal. Qué: Developers conversan con el Product Owner sobre Product Backlog items y seleccionan qué puede hacerse. Cómo: Developers planean el trabajo necesario para crear un Incremento que cumpla la Definition of Done. Las conversaciones se influyen mutuamente y pueden iterarse.",
+      "steps": [
+        "Abrir con propósito y Sprint Goal.",
+        "Explorar elementos del Product Backlog y su relación con el objetivo.",
+        "Considerar disponibilidad, conocimiento, incertidumbre y trabajo no planificado conocido.",
+        "Acordar una selección realista y explicar supuestos.",
+        "Construir un plan que pueda adaptarse diariamente."
+      ],
+      "example": "Si el objetivo es reducir abandono en el registro, el equipo compara las historias candidatas por contribución al objetivo y comprensión; luego identifica integración, pruebas, diseño y dependencias necesarias.",
+      "pitfalls": [
+        "Tratar los tres temas como silos desconectados.",
+        "Confundir «qué» con prometer todo el backlog.",
+        "Planear el «cómo» sin conversar sobre calidad y Definition of Done."
+      ],
+      "lens": "La estructura del lienzo refleja meta/contexto, historias y conversación/revisión. Usar las secciones como apoyo, no como sustituto de la conversación.",
+      "sources": [
+        "scrum-guide-2020"
+      ]
+    },
+    {
+      "id": "story-anatomy",
+      "title": "Anatomía y propósito de una historia de usuario",
+      "category": "user-stories",
+      "tags": [
+        "historia de usuario",
+        "hu",
+        "user story",
+        "rol",
+        "necesidad",
+        "beneficio",
+        "como quiero para",
+        "formato"
+      ],
+      "summary": "Una historia es una ayuda para conversar sobre una necesidad y el valor esperado; no es un contrato exhaustivo ni una especificación completa.",
+      "detail": "Un formato común es «Como [tipo de usuario], quiero [necesidad o capacidad], para [beneficio]». La estructura ayuda a hacer visible quién necesita algo, qué busca y por qué importa. Su valor principal está en la conversación, la comprensión compartida y el aprendizaje. No todas las necesidades se expresan mejor con este formato; no hay que forzarlo si oculta la naturaleza del trabajo.",
+      "steps": [
+        "Identificar un rol o persona real y relevante.",
+        "Expresar una necesidad desde la perspectiva de esa persona.",
+        "Explicar el beneficio o resultado esperado.",
+        "Conversar ejemplos, restricciones y dudas con las personas pertinentes.",
+        "Mantener el detalle suficiente para que el equipo entienda y pueda planear, sin documentar por anticipado todo el futuro."
+      ],
+      "example": "Como cliente que realizó una compra, quiero consultar el estado del pedido para saber cuándo llegará. El beneficio es reducir incertidumbre y consultas a soporte.",
+      "pitfalls": [
+        "Escribir una tarea técnica como si fuera valor de usuario sin explicar su propósito.",
+        "Confundir el formato «Como/Quiero/Para» con una regla obligatoria de Scrum.",
+        "Escribir historias enormes o tan detalladas que no dejan espacio a conversación."
+      ],
+      "lens": "Campos rol, necesidad y beneficio de Sprint Claro. Son una guía para redactar y conversar; no son una validación automática de valor.",
+      "sources": [
+        "cohn-usa",
+        "cohn-just-enough"
+      ]
+    },
+    {
+      "id": "acceptance",
+      "title": "Criterios de aceptación: ejemplos y límites",
+      "category": "user-stories",
+      "tags": [
+        "criterios de aceptación",
+        "aceptación",
+        "acceptance criteria",
+        "pruebas",
+        "verificable",
+        "gherkin",
+        "dado cuando entonces"
+      ],
+      "summary": "Los criterios de aceptación describen condiciones específicas que ayudan a entender cuándo una historia satisface las necesidades acordadas.",
+      "detail": "Deben ser claros, relevantes y comprobables por las personas involucradas. Pueden expresarse en lenguaje natural o con ejemplos estructurados, por ejemplo Dado/Cuando/Entonces. No sustituyen la conversación ni la Definition of Done. Los criterios se enfocan en el comportamiento o resultado particular de un Product Backlog item; la Definition of Done establece el estándar de calidad del Incremento.",
+      "steps": [
+        "Identificar escenarios principales y alternativos.",
+        "Describir el comportamiento esperado desde el punto de vista pertinente.",
+        "Incluir límites, errores y reglas relevantes.",
+        "Evitar criterios ambiguos como «rápido», «fácil» o «intuitivo» sin contexto medible.",
+        "Revisar ejemplos con Product Owner, Developers y personas relevantes."
+      ],
+      "example": "Dado que el cliente tiene un pedido confirmado, cuando consulta «Mis pedidos», entonces ve el estado actual y la fecha estimada de entrega. Caso alternativo: si no hay pedidos, se muestra un mensaje que explica cómo iniciar una compra.",
+      "pitfalls": [
+        "Usar criterios como una lista de tareas internas.",
+        "Repetir la historia con otras palabras sin añadir condiciones observables.",
+        "Confundir aceptación de una historia con Definition of Done."
+      ],
+      "lens": "Campo Criterios de aceptación. Sprint Claro solo comprueba si se registró texto; no interpreta automáticamente si es suficiente, testeable o correcto.",
+      "sources": [
+        "cohn-usa"
+      ]
+    },
+    {
+      "id": "refinement",
+      "title": "Refinamiento: justo a tiempo y con detalle suficiente",
+      "category": "backlog-refinement",
+      "tags": [
+        "refinamiento",
+        "refine",
+        "backlog",
+        "preparación",
+        "just in time",
+        "just enough",
+        "ready",
+        "preparado"
+      ],
+      "summary": "Refinar mejora la comprensión y el tamaño de los elementos del Product Backlog de forma continua. La meta no es perfeccionar todo antes de empezar.",
+      "detail": "El refinamiento es una actividad continua para agregar detalle, orden y tamaño a los elementos. Mike Cohn propone trabajar justo a tiempo y con detalle suficiente: invertir en comprensión cuando se aproxima el momento de decidir, sin especificar exhaustivamente elementos lejanos. Un elemento candidato a Sprint Planning debería poder conversarse y estimarse con entendimiento suficiente, pero no existe una Definition of Ready obligatoria en Scrum Guide.",
+      "steps": [
+        "Identificar elementos que probablemente se consideren pronto.",
+        "Aclarar problema, usuario, resultado y restricciones.",
+        "Agregar ejemplos y criterios donde ayuden a reducir ambigüedad.",
+        "Dividir elementos demasiado grandes conservando valor útil.",
+        "Registrar preguntas abiertas y decidir si impiden una selección responsable."
+      ],
+      "example": "Una historia que dice «mejorar reportes» es demasiado amplia para una conversación concreta. Refinarla puede descubrir distintos usuarios y resultados; se podría dividir en «descargar el resumen mensual» y «filtrar por periodo», si cada parte aporta valor útil.",
+      "pitfalls": [
+        "Refinar todo el backlog con el mismo nivel de detalle.",
+        "Exigir que no quede ninguna pregunta abierta.",
+        "Tratar Definition of Ready como elemento oficial de Scrum."
+      ],
+      "lens": "Usar rol, necesidad, beneficio, criterios, contribución y dependencias. Los campos ayudan a detectar temas para conversar, no constituyen una certificación de preparación.",
+      "sources": [
+        "scrum-guide-2020",
+        "cohn-just-enough"
+      ]
+    },
+    {
+      "id": "slicing",
+      "title": "Dividir historias grandes sin perder valor",
+      "category": "user-stories",
+      "tags": [
+        "dividir historias",
+        "story splitting",
+        "historias grandes",
+        "epic",
+        "vertical",
+        "rebanar",
+        "tamaño"
+      ],
+      "summary": "Dividir una historia grande permite aprender y entregar partes pequeñas de valor, en vez de fragmentar el trabajo únicamente por componentes técnicos.",
+      "detail": "Buscar cortes verticales que recorran el flujo necesario para ofrecer un resultado útil, aunque sea limitado. Explorar variaciones de reglas, tipos de usuario, caminos alternativos, datos, operaciones o niveles de servicio. La división es una herramienta de conversación: el equipo valida si cada parte es comprensible, verificable y potencialmente utilizable.",
+      "steps": [
+        "Identificar el resultado completo que hoy hace grande la historia.",
+        "Explorar escenarios, reglas y variaciones.",
+        "Buscar un subconjunto que pueda producir un resultado útil por sí mismo.",
+        "Evitar separar solo «base de datos», «API» y «pantalla» si ninguna parte entrega valor por sí sola.",
+        "Revisar dependencias y criterios de cada nueva historia."
+      ],
+      "example": "En vez de «implementar todo el portal de pedidos», una primera parte puede permitir consultar un pedido por número; después añadir historial y filtros, siempre que cada incremento tenga utilidad verificable.",
+      "pitfalls": [
+        "Dividir por capas técnicas y dejar funcionalidades inutilizables.",
+        "Crear partes diminutas sin sentido para usuarios.",
+        "Perder el objetivo común entre las historias resultantes."
+      ],
+      "lens": "Registrar historias separadas y su contribución al Sprint Goal. Usar dependencias si una parte realmente necesita otra; no crear dependencias por costumbre.",
+      "sources": [
+        "cohn-usa",
+        "cohn-aep"
+      ]
+    },
+    {
+      "id": "estimation",
+      "title": "Estimación relativa y puntos de historia",
+      "category": "estimation",
+      "tags": [
+        "estimación",
+        "story points",
+        "puntos",
+        "complejidad",
+        "esfuerzo",
+        "incertidumbre",
+        "tamaño"
+      ],
+      "summary": "Los puntos de historia son una medida relativa usada por algunos equipos para expresar el tamaño de un elemento considerando esfuerzo, complejidad e incertidumbre.",
+      "detail": "No son horas, días ni una medida universal comparable entre equipos. La estimación relativa compara elementos con referencias conocidas. Mike Cohn describe combinar esfuerzo, complejidad y riesgo/incertidumbre al estimar. Lo importante no es la precisión aparente de un número, sino la conversación que descubre supuestos y diferencias de entendimiento. Scrum no prescribe puntos de historia ni exige estimar con una técnica concreta.",
+      "steps": [
+        "Elegir una historia de referencia que el equipo comprenda.",
+        "Comparar la historia nueva con esa referencia.",
+        "Conversar diferencias de trabajo, complejidad y riesgo.",
+        "Registrar una estimación acordada por quienes realizarán el trabajo, si el equipo decide estimar.",
+        "Revisar si el número comunica algo útil y no se usa para evaluar personas."
+      ],
+      "example": "Si una historia conocida vale 3 puntos, una historia que parece aproximadamente el doble de compleja puede recibir un tamaño mayor, pero el número depende de la escala y calibración de ese equipo.",
+      "pitfalls": [
+        "Convertir puntos directamente a horas.",
+        "Comparar la velocidad de equipos distintos como si fueran equivalentes.",
+        "Usar puntos para medir productividad individual o presionar compromisos."
+      ],
+      "lens": "Campo de estimación del Lienzo. Es opcional y lo escribe el equipo. La unidad puede ser puntos, horas u otra referencia; al cambiarla, las cifras existentes no se convierten automáticamente.",
+      "sources": [
+        "cohn-aep",
+        "cohn-story-points",
+        "scrum-guide-2020"
+      ]
+    },
+    {
+      "id": "planning-poker",
+      "title": "Planning Poker para estimar en equipo",
+      "category": "estimation",
+      "tags": [
+        "planning poker",
+        "poker",
+        "estimación colaborativa",
+        "cartas",
+        "consenso",
+        "fibonacci",
+        "divergencia"
+      ],
+      "summary": "Planning Poker combina estimaciones individuales simultáneas con conversación sobre las diferencias para construir entendimiento compartido.",
+      "detail": "Una persona presenta la historia y aclara dudas. Quienes estiman eligen una carta en privado y revelan al mismo tiempo. Si hay diferencias, se escucha a quienes dieron valores altos y bajos para descubrir supuestos, complejidad, riesgo o alternativas. Se vuelve a estimar si aporta valor. La técnica es una práctica popular descrita por Mike Cohn; no es un evento ni requisito de Scrum.",
+      "steps": [
+        "Leer la historia y sus criterios; aclarar dudas de entendimiento.",
+        "Cada estimador elige una carta sin influenciarse por otros.",
+        "Revelar simultáneamente.",
+        "Escuchar razones de estimaciones altas y bajas.",
+        "Aclarar supuestos y repetir si es útil; registrar el resultado acordado."
+      ],
+      "example": "Una persona estima 3 y otra 8. En lugar de promediar 5.5 automáticamente, preguntan qué vio quien eligió 8: quizá incluyó migración de datos y pruebas de regresión que la otra persona no consideró.",
+      "pitfalls": [
+        "Promediar diferencias sin entenderlas.",
+        "Permitir que una voz con autoridad imponga el número.",
+        "Confundir consenso numérico con certeza de entrega."
+      ],
+      "lens": "Sprint Claro ofrece un campo para registrar la estimación final del equipo; no implementa una sala ni baraja interactiva de Planning Poker.",
+      "sources": [
+        "cohn-planning-poker",
+        "cohn-aep"
+      ]
+    },
+    {
+      "id": "capacity",
+      "title": "Capacidad, disponibilidad y pronóstico",
+      "category": "capacity",
+      "tags": [
+        "capacidad",
+        "disponibilidad",
+        "vacaciones",
+        "ausencias",
+        "interrupciones",
+        "velocity",
+        "velocidad",
+        "pronóstico"
+      ],
+      "summary": "La capacidad ayuda a conversar sobre cuánto trabajo puede abordar el equipo dadas sus circunstancias; no es una garantía ni un compromiso impuesto.",
+      "detail": "Considerar vacaciones, días festivos, guardias, soporte, trabajo operativo, incorporación de personas, dependencias y cambios de contexto. Si un equipo tiene datos históricos, puede utilizarlos como referencia de pronóstico, entendiendo que la velocidad es una observación del equipo en un contexto, no una cuota ni métrica individual. No sumar horas disponibles y puntos como si fueran unidades convertibles.",
+      "steps": [
+        "Hacer visible quién estará disponible y qué restricciones conocidas existen.",
+        "Considerar interrupciones y trabajo que no aparece en el backlog.",
+        "Usar datos históricos del propio equipo con cautela, si existen.",
+        "Seleccionar trabajo en función del Sprint Goal y de lo que el equipo considera viable.",
+        "Revisar el pronóstico conforme se aprende, sin convertirlo en promesa."
+      ],
+      "example": "Un equipo suele completar alrededor de 20 puntos, pero en el próximo Sprint dos integrantes estarán de vacaciones y hay una guardia. No debe copiar automáticamente los 20: conversa sobre la disponibilidad y el trabajo operativo antes de seleccionar.",
+      "pitfalls": [
+        "Tratar la velocidad pasada como objetivo obligatorio.",
+        "Dividir puntos por horas disponibles con una fórmula universal.",
+        "Llenar capacidad al 100% sin contemplar incertidumbre ni soporte."
+      ],
+      "lens": "Registrar capacidad de referencia opcional, unidad y notas de disponibilidad. La suma de estimaciones es una comprobación aritmética local, no pronóstico de entrega.",
+      "sources": [
+        "cohn-aep",
+        "cohn-story-points",
+        "scrum-guide-2020"
+      ]
+    },
+    {
+      "id": "definition-done",
+      "title": "Definition of Done y criterios de aceptación",
+      "category": "quality",
+      "tags": [
+        "definition of done",
+        "dod",
+        "definición de terminado",
+        "criterios de aceptación",
+        "calidad",
+        "incremento",
+        "hecho"
+      ],
+      "summary": "La Definition of Done es el compromiso de calidad del Incremento; los criterios de aceptación describen condiciones específicas de un elemento.",
+      "detail": "La Definition of Done formaliza el estado del Incremento cuando cumple las medidas de calidad requeridas para el producto. Si una organización tiene un estándar, todos los Scrum Teams deben seguirlo como mínimo; si no, el Scrum Team crea una Definition of Done apropiada. Los criterios de aceptación de una historia son específicos de ese elemento y no sustituyen el estándar común. Si un elemento no cumple la Definition of Done, no forma parte del Incremento.",
+      "steps": [
+        "Definir un estándar común de calidad del producto.",
+        "Incluir las actividades necesarias para que el Incremento sea usable y verificable.",
+        "Mantener el estándar visible y compartido.",
+        "Escribir criterios particulares para aclarar comportamientos de cada historia.",
+        "No declarar terminado algo que no cumple la Definition of Done."
+      ],
+      "example": "Criterio de aceptación: el cliente puede descargar su factura PDF. Definition of Done: código revisado, pruebas acordadas ejecutadas, seguridad validada y documentación pertinente actualizada. Son niveles distintos.",
+      "pitfalls": [
+        "Usar Definition of Done como lista de deseos por historia.",
+        "Confundir «mi tarea está terminada» con Incremento terminado.",
+        "Hacer negociable la calidad para cumplir una fecha."
+      ],
+      "lens": "Campo Definition of Done en contexto del Sprint y campo Criterios en cada HU. Se mantienen separados deliberadamente.",
+      "sources": [
+        "scrum-guide-2020",
+        "cohn-usa"
+      ]
+    },
+    {
+      "id": "dependencies",
+      "title": "Dependencias, bloqueos y riesgos",
+      "category": "risk-dependencies",
+      "tags": [
+        "dependencias",
+        "bloqueo",
+        "riesgos",
+        "impedimentos",
+        "ciclo",
+        "secuencia",
+        "integración"
+      ],
+      "summary": "Hacer visibles las dependencias ayuda al equipo a conversar sobre secuencia, coordinación, alternativas y riesgos antes y durante el Sprint.",
+      "detail": "Una dependencia expresa que un elemento necesita información, decisión, capacidad, sistema o resultado de otro. Distinguir dependencia real de una preferencia de secuencia. Identificar quién puede ayudar, qué condición desbloquea el trabajo y qué alternativa existe. Un riesgo es una incertidumbre que podría afectar el objetivo; un impedimento es una situación actual que dificulta el avance.",
+      "steps": [
+        "Describir qué necesita una historia y de quién o de qué depende.",
+        "Comprobar si la dependencia es real y cuándo se necesita.",
+        "Identificar responsable de coordinación, fecha o condición y alternativa.",
+        "Registrar riesgo, impacto y señal temprana.",
+        "Revisar si el plan conserva una ruta viable hacia el Sprint Goal."
+      ],
+      "example": "La historia de notificación necesita el evento de confirmación de pago. El equipo puede acordar un contrato de integración temprano y una simulación temporal para desarrollar en paralelo, validando luego el flujo real.",
+      "pitfalls": [
+        "Confundir dependencia con asignación fija de trabajo.",
+        "Ocultar dependencias externas hasta el final.",
+        "Interpretar que una alerta automática determina por sí sola que el Sprint fracasará."
+      ],
+      "lens": "El lienzo permite declarar dependencias entre historias y registrar riesgos y ayudas. Sus avisos detectan referencias fuera de selección y ciclos; no evalúan el contexto ni proponen soluciones automáticamente.",
+      "sources": [
+        "scrum-guide-2020"
+      ]
+    },
+    {
+      "id": "self-management",
+      "title": "Autogestión, colaboración y selección del trabajo",
+      "category": "teamwork",
+      "tags": [
+        "autogestión",
+        "self management",
+        "asignación",
+        "responsabilidad",
+        "colaboración",
+        "equipo",
+        "selección"
+      ],
+      "summary": "Los Developers deciden quién hace qué, cuándo y cómo. El plan es colaborativo y puede adaptarse a medida que el equipo aprende.",
+      "detail": "El Product Owner conversa sobre valor y orden del Product Backlog; Developers seleccionan los elementos que consideran que pueden completar y crean el plan. El Scrum Team es responsable de crear un Incremento valioso y usable. Proponer una persona para una historia puede ayudar a iniciar la conversación, pero no debe convertirse en asignación unilateral ni silos de propiedad.",
+      "steps": [
+        "Aclarar el resultado y las habilidades necesarias.",
+        "Conversar quién quiere colaborar y qué apoyos se requieren.",
+        "Acordar cómo coordinar el trabajo y compartir conocimiento.",
+        "Revisar diariamente el plan y adaptarlo hacia el Sprint Goal.",
+        "Hacer visibles impedimentos y pedir ayuda pronto."
+      ],
+      "example": "En vez de asignar «Ana hace backend y Luis pruebas», el equipo conversa cómo terminar la historia, quién puede colaborar, qué conocimiento falta y cómo evitar que el trabajo quede esperando una sola persona.",
+      "pitfalls": [
+        "Asignar tareas desde fuera del equipo sin conversación.",
+        "Optimizar ocupación individual en lugar de terminar trabajo útil.",
+        "Confundir autogestión con ausencia de responsabilidad."
+      ],
+      "lens": "El campo participante propuesto y motivo es una ayuda de conversación. El equipo conserva la decisión y puede colaborar sin dueño exclusivo.",
+      "sources": [
+        "scrum-guide-2020"
+      ]
+    },
+    {
+      "id": "local-checks",
+      "title": "Interpretar las revisiones del Lienzo Sprint Claro",
+      "category": "sprint-claro",
+      "tags": [
+        "avisos",
+        "revisión",
+        "validación",
+        "campos vacíos",
+        "alertas",
+        "comprobaciones",
+        "análisis"
+      ],
+      "summary": "Los avisos del lienzo son comprobaciones locales y transparentes para provocar conversaciones; no certifican calidad, viabilidad ni cumplimiento de Scrum.",
+      "detail": "Sprint Claro revisa si hay campos relevantes vacíos, si las estimaciones están incompletas o exceden la capacidad de referencia, si existen dependencias hacia historias no seleccionadas y si hay ciclos. También hace visibles riesgos, apoyos y propuestas humanas. Un resultado sin alertas no demuestra que el plan sea correcto. Un aviso tampoco significa automáticamente que el plan sea inviable: el equipo interpreta contexto y decide qué hacer.",
+      "steps": [
+        "Leer cada aviso y localizar el dato que lo genera.",
+        "Comprobar si el dato está actualizado y si aplica.",
+        "Conversar el impacto sobre Sprint Goal, calidad y plan.",
+        "Registrar la decisión o ajuste que el equipo acuerde.",
+        "Volver a revisar después de actualizar el lienzo."
+      ],
+      "example": "Una historia supera la capacidad de referencia. Esto no prueba que no pueda hacerse; puede indicar que la capacidad es antigua, que la unidad no es comparable o que el equipo necesita revisar la selección.",
+      "pitfalls": [
+        "Tratar un indicador verde como aprobación automática.",
+        "Tratar una alerta como una orden del sistema.",
+        "Asumir que la herramienta entiende el contenido semántico de cada historia."
+      ],
+      "lens": "Esta ficha describe exactamente el tipo de comprobaciones declaradas por el producto. El motor local del chatbot no accede a los datos privados que cada visitante tenga guardados en su lienzo.",
+      "sources": [
+        "scrum-guide-2020"
+      ]
+    },
+    {
+      "id": "storage-export",
+      "title": "Privacidad, almacenamiento y respaldos del lienzo",
+      "category": "sprint-claro",
+      "tags": [
+        "datos",
+        "privacidad",
+        "almacenamiento",
+        "local",
+        "navegador",
+        "respaldo",
+        "json",
+        "csv",
+        "exportar"
+      ],
+      "summary": "El Lienzo guarda información localmente en el navegador cuando el almacenamiento está disponible; no sincroniza automáticamente entre dispositivos.",
+      "detail": "El usuario debe descargar respaldos para conservar una copia o mover el trabajo. JSON permite restaurar contexto, equipo e historias; CSV exporta el backlog para hoja de cálculo. El prompt exportado contiene contexto del equipo y debe revisarse antes de compartirlo con un servicio externo. El chatbot de conocimiento no puede leer automáticamente ese contenido ni editar el lienzo.",
+      "steps": [
+        "Guardar formularios dentro del lienzo.",
+        "Descargar periódicamente el respaldo JSON.",
+        "Guardar el archivo en un lugar seguro y autorizado.",
+        "Usar CSV cuando se necesite analizar historias en una hoja de cálculo.",
+        "Revisar y quitar información confidencial antes de compartir un prompt exportado."
+      ],
+      "example": "Si empiezas a planear en una computadora y necesitas continuar en otra, descarga el JSON y restaura ese archivo en el navegador del segundo dispositivo.",
+      "pitfalls": [
+        "Suponer que existe una cuenta o sincronización en la nube.",
+        "Cerrar el navegador sin respaldo cuando los datos son importantes.",
+        "Compartir el prompt exportado sin revisar información sensible."
+      ],
+      "lens": "Sección Exportar y respaldar. Las exportaciones disponibles son plan TXT, prompt TXT, respaldo JSON y backlog CSV.",
+      "sources": []
+    },
+    {
+      "id": "anti-patterns",
+      "title": "Errores frecuentes al planificar un Sprint",
+      "category": "sprint-planning",
+      "tags": [
+        "errores",
+        "anti patrones",
+        "malas prácticas",
+        "compromiso",
+        "sobreplanificación",
+        "horas extra",
+        "scope"
+      ],
+      "summary": "Una planificación útil equilibra valor, aprendizaje, capacidad y calidad; no busca llenar el Sprint ni producir una certeza falsa.",
+      "detail": "Errores comunes: iniciar por números en lugar del propósito; convertir el Sprint Goal en lista de historias; sobrecargar el Sprint; tratar estimaciones como compromisos; dividir historias sin valor independiente; ignorar trabajo operativo y dependencias; asumir que el plan no cambiará. El plan es una hipótesis de trabajo que el equipo inspecciona y adapta, manteniendo el objetivo y la calidad.",
+      "steps": [
+        "Preguntar primero qué resultado hace valioso el Sprint.",
+        "Examinar comprensión y tamaño de las historias candidatas.",
+        "Hacer visible disponibilidad e incertidumbre.",
+        "Seleccionar con criterio del equipo y construir un plan flexible.",
+        "Acordar cómo inspeccionar avance y adaptar el plan."
+      ],
+      "example": "Si el equipo tiene más trabajo candidato que capacidad, no se debe recurrir automáticamente a horas extra. Repriorizar, reducir alcance negociable o ajustar selección manteniendo el Sprint Goal y la calidad.",
+      "pitfalls": [
+        "Usar horas extra como supuesto del plan.",
+        "Convertir velocidad en cuota.",
+        "Confundir más historias seleccionadas con más valor entregado."
+      ],
+      "lens": "Usar los avisos y el resumen del lienzo como insumos para la conversación, no como una puntuación del equipo.",
+      "sources": [
+        "scrum-guide-2020",
+        "cohn-aep",
+        "cohn-story-points"
+      ]
+    }
+  ]
+}
